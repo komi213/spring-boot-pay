@@ -9,7 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.AlipayResponse;
@@ -35,6 +34,8 @@ import com.itstyle.common.model.Product;
 import com.itstyle.common.utils.CommonUtil;
 import com.itstyle.modules.alipay.service.IAliPayService;
 import com.itstyle.modules.alipay.util.AliPayConfig;
+import org.springframework.stereotype.Service;
+
 /**
  * TODO
  * 创建者 科帮网

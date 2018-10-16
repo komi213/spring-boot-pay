@@ -10,9 +10,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 
+import org.springframework.stereotype.Service;
 import weixin.popular.api.SnsAPI;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.alipay.demo.trade.utils.ZxingUtils;
 import com.itstyle.common.constants.Constants;
 import com.itstyle.common.model.Product;
@@ -23,6 +23,7 @@ import com.itstyle.modules.weixinpay.util.ConfigUtil;
 import com.itstyle.modules.weixinpay.util.HttpUtil;
 import com.itstyle.modules.weixinpay.util.PayCommonUtil;
 import com.itstyle.modules.weixinpay.util.XMLUtil;
+
 @Service
 public class WeixinPayServiceImpl implements IWeixinPayService {
 	private static final Logger logger = LoggerFactory.getLogger(WeixinPayServiceImpl.class);
